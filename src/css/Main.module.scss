@@ -1,0 +1,96 @@
+@import 'common';
+.container{
+    background-color: $bgcolor;
+    width: 100%;
+    height: 100%;
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .header_Box{
+        width: 100%;
+        transition: height 0.3s;
+    }
+    .wrap > div:not(.end_Div){
+        box-Shadow: 0.5px 0.5px 5px 0px #cfcfcf;
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .wrap > div{margin-bottom: 15px;}
+    .wrap{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        h1{
+            font-size: 25px;
+            color: $hcolor;
+            text-align: center;
+        }
+        h2{
+            font-size: 20px;
+            font-weight: 600;
+            color: $hcolor;
+            text-align: center;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            color: white;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        .intro_Div{
+            .img_Div{
+                max-width: 1140px; 
+                min-height: 260px;
+                margin: 0 auto;
+                position: relative;
+            }
+            .text_Div{
+                position: absolute;
+                top: 20px;
+                left: 0px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                h2{color: white;}
+                .text_Box{
+                    background-color: rgba(240, 186, 186, 0.3);
+                    margin: 0 20px;
+                    border-radius: 5px;
+                    padding: 10px;
+                }
+                .bub_Div{
+                    min-height: 260px;
+                    margin: 0 auto;
+                    width: 0px;
+                    height: 0px;
+                    border-top: 30px solid rgba(240, 186, 186, 0.3);
+                    border-right: 20px solid transparent;
+                }
+            }
+        }
+        .pj_Div{
+            .pj_Box{
+                display: grid;
+                grid-template-columns: 49% 49%;
+                gap: 2%;
+                .text_Box{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .pj_View{transition: all 0.2s;}
+                .pj_View:hover{transform: scale(1.3); color: $yellow;}
+            }
+        }
+    }
+}

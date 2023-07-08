@@ -1,0 +1,53 @@
+@import 'common';
+.container{
+    background-color: $bgcolor;
+    width: 100%;
+    height: 100%;
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .header_Box{
+        width: 100%;
+        transition: height 0.3s;
+    }
+    .wrap{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        *{margin-bottom: 15px;}
+        h1{
+            font-size: 25px;
+            color: $hcolor;
+            text-align: center;
+        }
+        h2{
+            font-size: 20px;
+            color: $hcolor;
+            text-align: center;
+        }
+        p{
+            font-size: 17px;
+            font-weight: 600;
+            color: $pcolor;
+        }
+        img{
+            margin: 0 auto;
+        }
+        .cont_Div{
+            box-Shadow: 0.5px 0.5px 5px 0px #cfcfcf;
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            padding: 20px;
+            .codeview{transition: all 0.2s;}
+            .codeview:hover{color: $yellow;}
+        }
+        .stack_Div{
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+        }
+    }
+}
