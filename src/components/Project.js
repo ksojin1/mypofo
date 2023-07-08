@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import styles from '../css/Project.module.scss';
 import { Routes, Route } from "react-router-dom";
 import Taxcare from './Taxcare';

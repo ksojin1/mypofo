@@ -5,44 +5,44 @@ const Portfolio = () => {
     return (
         <div className={styles.wrap}>
             <div className={styles.cont_Div}>
-                <h1>🔸MYPOFO🔸<br/>지금 보고계신 Portfolio 사이트</h1>
+                <h1>🔸MYPOFO🔸<br/>포트폴리오 사이트</h1>
                 <h2>2023.07.03 ~ 2023.07.09 🧍‍♂️</h2>
-                <h2><a className={styles.codeview} href='https://github.com/wonjun12/MyFF-Project'>👁‍🗨CodeView</a></h2>
-                <p>맛집의 위치를 지도에 표시해 나만의 맛집 스토리를 기록할 수 있고 실시간으로 팔로워와 소통할 수 있는 SNS입니다.<br/>
-                제가 맡은 역할은 메인페이지, 게시물 상세보기, 댓글 CRUD 구현입니다.</p>
-                <p>국비지원과정에서 만난 팀원들과 함께 학원수업과는 별개로 같이 스터디하면서 React와 Node를 공부해 완성한 프로젝트입니다.<br/>
-                그만큼 어려운 부분도 많았지만 처음부터 끝까지 팀원들과 같이 적극적으로 소통하며 가장 재밌게 만들었던 프로젝트이기도 합니다.
+                <h2><a className={styles.codeview} href='https://github.com/ksojin1/pf_project'>👁‍🗨CodeView</a></h2>
+                <p>지금 보고 계신 저의 포트폴리오 사이트이며 단독으로 제작한 프로젝트입니다.<br/>
+                디바이스 종류에 따라 웹페이지의 크기가 자동으로 변경되는 반응형 웹으로 구현했습니다.</p>
+                <p>Github Page로 배포할 때 여러가지 오류를 해결하는 과정에서 경로설정과 라우팅에 대해 더 자세하게 이해할 수 있었습니다.<br/>
                 </p>
                 <div className={styles.stack_Div}>
-                    <img src={`${process.env.PUBLIC_URL}/image/vscode.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/github.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/react.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/react_router.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/sass.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/axios.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/nodeexpress.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/mysql.png`}/>
+                    <img src={`${process.env.PUBLIC_URL}/image/vscode.png`} alt="vscode"/>
+                    <img src={`${process.env.PUBLIC_URL}/image/github.png`} alt="github"/>
+                    <img src={`${process.env.PUBLIC_URL}/image/react.png`} alt="react"/>
+                    <img src={`${process.env.PUBLIC_URL}/image/react_router.png`} alt="react_router"/>
+                    <img src={`${process.env.PUBLIC_URL}/image/sass.png`} alt="sass"/>
                 </div>
             </div>
             <div className={styles.cont_Div}>
-                <h1>📍메인화면 View📍</h1>
-                <h1>팔로워, 게시글 간략보기 및 무한 스크롤기능 구현</h1>
-                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/myff1.png`} /></div>
+                <h1>📍반응형 웹📍</h1>
+                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/mypofo1.png`} alt="메인페이지"/></div>
                 <p>
-                    🙋팔로워와 게시글을 간략하게 볼 수 있는 메인페이지를 구현했습니다.<br/>
-                    DB에서 N:N 관계의 팔로워정보, 해당 팔로워의 게시글, 그리고 각 게시글의 댓글정보까지
-                    추출해 사용자에게 보여주는 페이지입니다.<br/>
-                    이미지는 DB에 Blob타입으로 저장하기 때문에 프론트에서 Base64로 변환해 보여주었습니다.
+                    🙋화면 크기에 따라 UI구조가 달라지는 반응형 웹을 구현 했습니다.
                 </p>
-                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/myff2.png`} /></div>
+                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/mypofo2.png`} alt="반응형코드"/></div>
                 <p>
-                    🙋‍♀️스크롤의 움직임에 따라 게시글을 추가로 보여주는 무한 스크롤 기능을 구현했습니다.<br/>
-                    사용자의 ViewPort와 타겟 요소의 교차점을 감지하는 Intersection Observer API를 활용해 마지막 게시글을 감지하면
-                    서버에서 게시물을 추가로 가져오는 Custom Hook을 만들어 사용했습니다.<br/>
-                    개인적으로 프로젝트를 하면서 가장 구현하기 어려웠던 기능으로 React 랜더링 방식과 Axios의 비동기식 통신에 대해
-                    더 자세히 공부할 수 있었습니다.
-                    <br/>
+                    🙋반응형 UI는 CSS Media Query를 사용하지 않고 React Hook으로만 구현했습니다.
                 </p>
+            </div>
+            <div className={styles.cont_Div}>
+                <h1>📍Github Page & React Router📍</h1>
+                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/404.png`} alt="메인페이지"/></div>
+                <p>
+                    🙋github.io로 배포하는 과정에서 라우팅문제로 발생하는 오류를 해결했습니다.<br/>
+                    원인은 React가 Single Page Application이기 때문에 index.html 페이지 하나로만 작동한다는 점과
+                    Github에서는 모든 URL이 index.html 페이지로 이동하지 않고 해당 경로에 있는 페이지를 찾는다는 점이었습니다.<br/>
+                    때문에 페이지를 못 찾았을 경우 출력하는 404.html에 index.html 코드를 복사해 오류를 해결했습니다.
+                </p>
+            </div>
+            <div className={styles.end_Div}>
+                <h2 style={{fontSize: '18px'}}>🐥끝까지 봐주셔서 감사합니다.🐥</h2>
             </div>
         </div>
     );

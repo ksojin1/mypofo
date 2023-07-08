@@ -25,19 +25,18 @@
         margin-top: 50px;
         margin-bottom: 50px;
         h1{
+            font-family: 'bold';
             font-size: 25px;
             color: $hcolor;
             text-align: center;
         }
         h2{
             font-size: 20px;
-            font-weight: 600;
             color: $hcolor;
             text-align: center;
         }
         p{
-            font-size: 20px;
-            font-weight: 400;
+            font-family: 'light';
             color: white;
         }
         img{
@@ -67,6 +66,7 @@
                     margin: 0 20px;
                     border-radius: 5px;
                     padding: 10px;
+                    text-shadow: 2px 2px 3px gray;
                 }
                 .bub_Div{
                     min-height: 260px;

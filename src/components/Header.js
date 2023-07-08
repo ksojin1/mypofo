@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from '../css/Header.module.scss';
+import {Link} from 'react-router-dom';
 
 const Header = ({setSideNav, sideNav, mobile, scroll}) => {
 
@@ -70,8 +71,8 @@ const Header = ({setSideNav, sideNav, mobile, scroll}) => {
                 <div className={styles.blank}></div>
                 <div className={styles.title}><p onClick={() => window.location = '/'}>{scroll ? 'KSJ' : "MYPOFO"}</p></div>
                 <div className={styles.icon}>
-                    <img onClick={() => window.location = 'https://github.com/ksojin1'} src={`${process.env.PUBLIC_URL}/image/github.png`}/>
-                    <img onClick={() => window.location = 'https://velog.io/@ksojin1'} src={`${process.env.PUBLIC_URL}/image/velog.png`}/>
+                    <img alt="github" onClick={() => window.location = 'https://github.com/ksojin1'} src={`${process.env.PUBLIC_URL}/image/github.png`}/>
+                    <img alt='velog' onClick={() => window.location = 'https://velog.io/@ksojin1'} src={`${process.env.PUBLIC_URL}/image/velog.png`}/>
                 </div>
             </div>
             <div className={styles.sideNav} style={sideNav ? (!mobile ? {width: '20%'} : {width: '100%', top: scroll ? '80px' : '120px'}) : {width: '0px', top: scroll ? '80px' : '120px'}}>
@@ -81,10 +82,10 @@ const Header = ({setSideNav, sideNav, mobile, scroll}) => {
                             <li className={styles.intro}><p onClick={() => window.location = '/'}>INTRO</p></li>
                             <li><p>PROJECT</p>
                                 <div className={styles.pj_list}>
-                                    <div onClick={() => window.location = '/project/portfolio'}>Portfolio</div>
-                                    <div onClick={() => window.location = '/project/taxcare'}>Taxcare</div>
-                                    <div onClick={() => window.location = '/project/plan'}>Plan</div>
-                                    <div onClick={() => window.location = '/project/myff'}>Myff</div>
+                                    <Link to='/project/portfolio'><div>Portfolio</div></Link>
+                                    <Link to='/project/taxcare'><div>Taxcare</div></Link>
+                                    <Link to='/project/plan'><div>Plan</div></Link>
+                                    <Link to='/project/myff'><div>MyFF</div></Link>
                                 </div>
                             </li>
                         </ul>

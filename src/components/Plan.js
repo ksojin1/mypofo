@@ -12,20 +12,20 @@ const Plan = () => {
                 제가 구현한 기능은 계획서 작성 및 View 입니다.</p>
                 <p>단기간에 두명이서 진행한 프로젝트로 좀 더 많은 기능을 구현하지 못해 아쉬웠지만 JSX로 Object타입을 활용하는 다양한 방법을 익힐 수 있었습니다.</p>
                 <div className={styles.stack_Div}>
-                    <img src={`${process.env.PUBLIC_URL}/image/vscode.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/github.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/react.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/react_router.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/axios.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/naver.png`} style={{width: '90%', borderRadius: '15px'}}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/sass.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/nodeexpress.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/mongodb.png`}/>
+                    <img src={`${process.env.PUBLIC_URL}/image/vscode.png`} alt="vscode"/>
+                    <img src={`${process.env.PUBLIC_URL}/image/github.png`} alt="github"/>
+                    <img src={`${process.env.PUBLIC_URL}/image/react.png`} alt="react"/>
+                    <img src={`${process.env.PUBLIC_URL}/image/react_router.png`} alt="react_routers"/>
+                    <img src={`${process.env.PUBLIC_URL}/image/axios.png`} alt="axios"/>
+                    <img src={`${process.env.PUBLIC_URL}/image/naver.png`} style={{width: '90%', borderRadius: '15px'}} alt="naver"/>
+                    <img src={`${process.env.PUBLIC_URL}/image/sass.png`} alt="sass"/>
+                    <img src={`${process.env.PUBLIC_URL}/image/nodeexpress.png`} alt="nodeexpress"/>
+                    <img src={`${process.env.PUBLIC_URL}/image/mongodb.png`} alt="mongodb"/>
                 </div>
             </div>
             <div className={styles.cont_Div}>
                 <h1>📍여행 계획표 UI 설계 및 Calendar활용📍</h1>
-                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/plan1.png`} /></div>
+                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/plan1.png`} alt="여행계획날짜"/></div>
                 <p>
                     🙋‍♀️여행 계획표 페이지 UI를 설계했습니다.<br/>
                     사용자가 실제 여행계획을 짜는 순서대로 작성할 수 있도록 기본정보입력 페이지와 일별계획작성 페이지로 나눴고
@@ -35,7 +35,7 @@ const Plan = () => {
             </div>
             <div className={styles.cont_Div}>
                 <h1>📍지도 API와 MongoDB 활용📍</h1>
-                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/plan2.png`}/></div>
+                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/plan2.png`} alt="여행계획기본정보"/></div>
                 <p>
                     🙋‍♀️네이버 지도 API를 활용해 사용자가 입력한 주소를 지도에 표시해 주는 기능을 구현했습니다.<br/>
                     DB에 저장할 데이터는 React-Context를 활용해 전역변수로 만들고 자식 컴포넌트에서 수정할 수 있도록 만들었으며
@@ -45,7 +45,7 @@ const Plan = () => {
             </div>
             <div className={styles.cont_Div}>
                 <h1>📍일자별 계획 작성📍</h1>
-                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/plan3.png`}/></div>
+                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/plan3.png`} alt="일자별계획"/></div>
                 <p>
                     🙋사용자가 입력한 기본정보를 토대로 일자별 계획을 작성하는 페이지를 구현했습니다.<br/>
                     날짜별로 여러개의 일정을 추가할 수 있으며 장소를 추가할 때 마다 좌표를 활용해 이동거리와 시간을 계산하는 기능을 구현했습니다.<br/>
@@ -54,7 +54,7 @@ const Plan = () => {
             </div>
             <div className={styles.cont_Div}>
                 <h1>📍여행 계획표 View📍</h1>
-                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/plan4.png`}/></div>
+                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/plan4.png`} alt="계획표보기"/></div>
                 <p>
                     🙋‍♀️DB에 저장한 데이터를 활용해 작성한 일별 계획표를 보여주고 수정하기를 누르면 다시 입력페이지로 이어지는 기능을 만들었습니다.<br/>
                     View페이지에서 수정페이지로 넘어가는 부분에서 중첩라우팅설계가 꼬여 전체적으로 코드를 수정해야 하는 상황이 발생했었습니다.<br/>

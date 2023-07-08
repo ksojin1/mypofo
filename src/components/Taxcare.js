@@ -18,17 +18,17 @@ const Taxcare = () => {
                     기능을 구현하려면 종합소득세 관련 다양한 수식을 공부해야 했기때문에 어려웠지만 그만큼 얻은 지식이 많았던 프로젝트였습니다.
                 </p>
                 <div className={styles.stack_Div}>
-                    <img src={`${process.env.PUBLIC_URL}/image/eclipse.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/java.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/servlet.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/mysql.png`}/>
-                    <img src={`${process.env.PUBLIC_URL}/image/tomcat.png`}/>
+                    <img src={`${process.env.PUBLIC_URL}/image/eclipse.png`} alt=""/>
+                    <img src={`${process.env.PUBLIC_URL}/image/java.png`} alt=""/>
+                    <img src={`${process.env.PUBLIC_URL}/image/servlet.png`} alt=""/>
+                    <img src={`${process.env.PUBLIC_URL}/image/mysql.png`} alt=""/>
+                    <img src={`${process.env.PUBLIC_URL}/image/tomcat.png`} alt=""/>
                 </div>
-                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/tax1.png`} /></div>
+                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/tax1.png`} alt="소득세신고서"/></div>
             </div>
             <div className={styles.cont_Div}>
                 <h1>📍종합소득금액계산📍</h1>
-                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/tax3.png`}/></div>
+                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/tax3.png`} alt="종합소득금액"/></div>
                 <p>
                     🙋‍♀️각 항목별로 수입금액과 비용을 입력하고 종합소득금액을 계산하는 기능을 구현했습니다.
                     DB에서 데이터를 가져와 금액을 계산하고 HashMap으로 JSP에 출력하는 코드를 작성했습니다.<br/>
@@ -37,7 +37,7 @@ const Taxcare = () => {
             </div>
             <div className={styles.cont_Div}>
                 <h1>📍공제계산📍</h1>
-                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/tax2.png`}/></div>
+                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/tax2.png`} alt="소득공제"/></div>
                 <p>
                     🙋‍♀️구현하기 제일 어려웠던 소득공제와 세액공제는 예외사항이 많고 여러 개의 테이블을 컨트롤해야 하기 때문에
                     SQL과 JAVA에 대해 제일 많이 공부했던 부분입니다.<br/>
@@ -47,7 +47,7 @@ const Taxcare = () => {
             </div>
             <div className={styles.cont_Div}>
                 <h1>📍UI설계📍</h1>
-                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/tax4.png`}/></div>
+                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/tax4.png`} alt="임대소득"/></div>
                 <p>
                     🙋‍♀️신고서양식을 참고해 새로 추가된 페이지의 UI를 만들었습니다.<br/>
                     개발자가 아닌 사용자의 입장에서 좋은 프로그램을 만들기 위해선 화면 설계가 제일 중요한 첫 단계임을 다시 한번 깨달을 수 있었습니다.
@@ -55,7 +55,7 @@ const Taxcare = () => {
             </div>
             <div className={styles.cont_Div}>
                 <h1>📍신고서 출력📍</h1>
-                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/tax5.png`}/></div>
+                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/tax5.png`} alt="신고서출력"/></div>
                 <p>
                     🙋‍♀️종합소득세신고서 양식을 UI로 만들고 프린트하는 기능을 구현했습니다.<br/>
                     프린트할 때는 전체 데이터를 가져와야 하므로 각 기능별 class에서 setAttribute 하는 함수 전체를 호출하고
