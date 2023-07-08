@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../css/Main.module.scss';
+import {Link} from 'react-router-dom';
 
 const Main = ({scroll, mobile}) => {
     return (
@@ -48,8 +49,8 @@ const Main = ({scroll, mobile}) => {
                                 개인 포트폴리오 사이트<br/>
                                 React, SCSS
                             </h2>
-                            <h2 className={styles.pj_View} onClick={() => {window.location = '/#/project/portfolio'; window.location.reload();}}>
-                                👁‍🗨Project View</h2>
+                            <Link to='/project/portfolio'><h2 className={styles.pj_View}>
+                                👁‍🗨Project View</h2></Link>
                         </div>
                     </div>
                     <div className={styles.pj_Box}>
@@ -59,8 +60,8 @@ const Main = ({scroll, mobile}) => {
                                 종합소득세신고 ERP 프로그램<br/>
                                 Java Servlet & Jsp, Jquery, MySQL
                             </h2>
-                            <h2 className={styles.pj_View} onClick={() => {window.location = '/#/project/taxcare'; window.location.reload();}}>
-                                👁‍🗨Project View</h2>
+                            <Link to='/project/taxcare'><h2 className={styles.pj_View}>
+                                👁‍🗨Project View</h2></Link>
                         </div>
                         <img src={`${process.env.PUBLIC_URL}/image/tax1.png`} alt='tax'/>
                     </div>
@@ -71,8 +72,8 @@ const Main = ({scroll, mobile}) => {
                                 🔸Plan🔸<br/>여행계획표 만들기 프로그램<br/>
                                 React, SCSS, Node express, MongoDB
                             </h2>
-                            <h2 className={styles.pj_View} onClick={() => {window.location = '/#/project/plan'; window.location.reload();}}>
-                                👁‍🗨Project View</h2>
+                            <Link to='/project/plan'><h2 className={styles.pj_View}>
+                                👁‍🗨Project View</h2></Link>
                         </div>
                     </div>
                     <div className={styles.pj_Box}>
@@ -81,8 +82,8 @@ const Main = ({scroll, mobile}) => {
                                 🔸MyFF🔸<br/>지도기반 맛집 SNS<br/>
                                 React, SCSS, Node express, MySQL
                             </h2>
-                            <h2 className={styles.pj_View} onClick={() => {window.location = '/#/project/myff'; window.location.reload();}}>
-                                👁‍🗨Project View</h2>
+                            <Link to='/project/myff'><h2 className={styles.pj_View}>
+                                👁‍🗨Project View</h2></Link>
                         </div>
                         <img src={`${process.env.PUBLIC_URL}/image/myff1.png`} alt='myff'/>
                     </div>
