@@ -1,103 +1,55 @@
-@import 'common';
-
+@import './_variable.scss';
 .container{
-    width: 100%;
-    .nav_Btn{
-        width: 80px;
-        position: fixed;
-        padding: 30px;
-        z-index: 999;
-        transition: all 0.3s;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        div{
-            width: 80px;
-            height: 6px;
-            background-color: $yellow;
-            border-radius: 3px;
-            transition: all 0.3s;
-        }
-    }
-    .header{
-        z-index: 997;
+    position: fixed;
+    z-index: 99;
+    top: 0px;
+    width: 400px;
+    height: 100%;
+    background-color: $boxcolor;
+    transition: all 0.3s;
+    .nav_Div{
         width: 100%;
-        //background-color: white;
-        color: $yellow;
-        font-weight: bold;
-        position: fixed;
-        transition: all 0.3s;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        div{
-            padding: 15px;
-        }
-        .blank{
-            text-align: left;
-            width: 135px;
-            z-index: -1;
-        }
-        .icon{
-            text-align: right;
-            display: flex;
-            width: 135px;
-            img{
-                cursor: pointer;
-                width: 50px;
-                transition: all 0.1s;
-            }
-            img:nth-child(1){
-                margin-right: 5px;
-            }
-            img:hover{
-                transform: scale(1.1);
-            }
-        }
-        .title{
-            transition: all 0.1s;
-            text-align: center;
-            cursor: pointer;
-            font-family: 'extra';
-        }
-        .title:hover{
-            margin-bottom: 10px;
-        }
-    }
-    .sideNav{
-        z-index: 998;
-        width: 20%;
-        height: 100%;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        background-color: $green;
-        transition: width 0.3s;
-        ul{
-            margin-top: 120px;
-            margin-left: 15%;
-            font-size: 25px;
-            font-family: 'bold';
+        .pf_List{
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 90px;
             color: white;
-            li{
-                margin-bottom: 20px;
-                cursor: pointer;
+            font-size: 18px;
+            font-family: 'bold';
+            text-shadow: 1px 1px 2px black;
+            img{
+                width: 100%; height: auto;
+                border-radius: 3px;
             }
-            li:hover{
-                color: $yellow;
+            li{margin-bottom: 10px;}
+            .study_Div{
+                img{
+                    width: 50px;
+                    border-radius: 5px;
+                    margin-right: 15px;
+                    transition: transform 0.1s;
+                    cursor: pointer;
+                }
+                img:hover{
+                    transform: scale(1.1);
+                }
             }
         }
-        .pj_list{
-            div{
-                cursor: pointer;
-                color: white;
-                font-size: 20px;
-                margin-top: 10px;
-                transition: margin-left 0.3s;
-                margin-left: 20px;
+        .menu_List{
+            width: 80%;
+            margin: 0 auto;
+            font-family: 'extra';
+            margin-top: 50px;
+            li{
+              font-size: 20px;
+              cursor: pointer;
             }
-            div:hover{
-                margin-left: 0px;
+            h1{color: $yellow;}            
+            .pj_title{cursor: default;}
+            .intro_title:hover{color: white}
+            h2:hover{color: $yellow;}
+            .pj_List{
+                margin-left: 20px;
             }
         }
     }

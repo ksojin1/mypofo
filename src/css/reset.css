@@ -65,6 +65,6 @@ input, textarea{
     font-size: 12px;
 }
 
-p{
-    line-height: 130%;
+p, h1, h2, h3{
+    line-height: 150%;
 }
