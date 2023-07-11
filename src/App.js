@@ -9,7 +9,7 @@ import styles from './css/App.module.scss';
 
 const Front = () => {
   useEffect(() => {
-    setTimeout(() => window.location = '/main', 8000);
+    setTimeout(() => window.location = '/main', 9000);
   }, []);
 
   return(
@@ -42,7 +42,7 @@ function App() {
   }
 
   useEffect(() => {
-    if(currentUrl == '/' && location.pathname == '/main') setSideNav(true);
+    if(currentUrl === '/' && location.pathname === '/main') setSideNav(true);
     else setSideNav(false);
     currentUrl = location.pathname;
 
