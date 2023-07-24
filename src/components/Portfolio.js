@@ -12,14 +12,17 @@ const Portfolio = () => {
                 <h2><a className={styles.codeview} href='https://github.com/ksojin1/mypofo'><span>▶</span>GitHub</a></h2>
                 <p>지금 보고 계신 저의 포트폴리오 사이트이며 디바이스 종류에 따라 웹페이지의 크기가 자동으로 변경되는 반응형 웹으로 구현했습니다.
                 </p>
-
                 <img src={`${process.env.PUBLIC_URL}/image/mypofo_skill.png`} alt="stack"/>
-                <br/>
-                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/mypofo3.png`} alt="메인페이지"/></div>
+                
+                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/mypofo2.png`} alt="메인페이지"/></div>
+            </div>
+            <div className={styles.cont_Div}>
+                <h2>배경이미지</h2>
                 <br/>
                 <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/mypofo1.png`} alt="메인페이지"/></div>
-                <br/>
-                <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/mypofo2.png`} alt="메인페이지"/></div>
+                <p>
+                    Open API를 활용해 날씨에 따라 배경이미지가 변경되도록 구현했습니다.
+                </p>
             </div>
             <div className={styles.end_Div}>
                 <h2 style={{fontSize: '18px'}}>끝까지 봐주셔서 감사합니다.</h2>

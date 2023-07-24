@@ -57,7 +57,6 @@ const Myff = () => {
                 <br/>
                 <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/myff8.png`} alt="사진미리보기"/></div>
                 <p>
-                    글쓰기에서 사진 업로드 및 미리보기 기능을 구현했습니다.<br/>
                     사용자가 이미지파일을 업로드하면 FileReader를 활용해 URL로 미리보기를 만들고
                     이미지파일을 State에 담아 추가, 삭제 기능을 구현했습니다.
                 </p>
@@ -68,7 +67,6 @@ const Myff = () => {
                 <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/myff6.png`} alt="비밀번호"/></div>
                 <div className={styles.img_Div}><img src={`${process.env.PUBLIC_URL}/image/myff7.png`} alt="메일"/></div>
                 <p>
-                    비밀번호 찾기 및 변경 기능을 구현했습니다.<br/>
                     이메일로 회원가입을 하기때문에 비밀번호 찾기에서 이메일을 입력하면 백에서 메일을 보내고
                     암호화된 비밀번호가 포함된 주소를 클릭하면 비밀번호를 체크하고 변경할 수 있도록 해주는 기능입니다.
                 </p>

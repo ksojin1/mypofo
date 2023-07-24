@@ -5,6 +5,7 @@
     top: 0px;
     width: 400px;
     height: 100%;
+    min-height: 100px;
     background-color: $boxcolor;
     transition: all 0.3s;
     .nav_Div{
@@ -15,10 +16,12 @@
             margin-top: 90px;
             color: white;
             font-size: 18px;
-            font-family: 'bold';
+            font-family: 'extra';
             text-shadow: 1px 1px 2px black;
             img{
-                width: 100%; height: auto;
+                width: 100%;
+                height: auto;
+                max-height: 280px;
                 border-radius: 3px;
             }
             li{margin-bottom: 10px;}

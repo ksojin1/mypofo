@@ -6,6 +6,7 @@ import Project from './components/Project';
 import NotFound from './components/NotFound';
 import reset_Style from './css/reset.css';
 import styles from './css/App.module.scss';
+import axios from 'axios';
 
 const Front = () => {
   useEffect(() => {
@@ -23,12 +24,15 @@ const Front = () => {
   );
 }
 
+
+
 let currentUrl = "/";
 
 function App() {
   const [sideNav, setSideNav] = useState(false);
   const [scroll, setScroll] = useState(false);
   const [smallSize, setSmallSize] = useState(false);
+  const [bgimg, setBgimg] = useState(0);
   const location = useLocation();
 
   const handleScroll = () => {
@@ -41,6 +45,19 @@ function App() {
     else setSmallSize(false);
   }
 
+  const getWeather = async() => {
+    //현재 위도,경도
+    const lat = 37.566535;
+    const lon = 126.9779692;
+
+    //API
+    const API_KEY = "29e6fdb8f4a2c1394c290696729a9c86";
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+
+    const res = await axios.get(url);
+    console.log(res.data);
+  }
+
   useEffect(() => {
     if(currentUrl === '/' && location.pathname === '/main') setSideNav(true);
     else setSideNav(false);
@@ -50,6 +67,8 @@ function App() {
   }, [location]);
   
   useEffect(() => {
+    getWeather();
+    
     if(window.innerWidth < 850) setSmallSize(true);
     else setSmallSize(false);
     window.addEventListener('scroll', handleScroll);
@@ -62,7 +81,7 @@ function App() {
 
   return (
     <div className={styles.container}>
-      <img className={styles.bgimg} src={`${process.env.PUBLIC_URL}/image/bg2.jpg`} alt='background'/>
+      <img className={styles.bgimg} src={`${process.env.PUBLIC_URL}/image/paint${bgimg}.jpg`} alt='background'/>
       <Header sideNav={sideNav}/>
       <div className={styles.empty_Box} style={sideNav? {width: '500px'} : {width: '0px'}}></div>
       <div className={styles.nav_Btn} onClick={() => setSideNav((sideNav) => !sideNav)}>
