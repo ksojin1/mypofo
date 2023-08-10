@@ -54,8 +54,24 @@ function App() {
     const API_KEY = "29e6fdb8f4a2c1394c290696729a9c86";
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
 
-    const res = await axios.get(url);
-    console.log(res.data);
+    try {
+      const res = await axios.get(url);  
+      const weather = res.data.weather[0].id;
+      console.log(weather);
+      if(weather != 800 && weather > 700){
+        setBgimg(2);
+      }else if(weather > 600){
+        setBgimg(3);
+      }else if(weather > 300){
+        setBgimg(4);
+      }else if(weather >= 200){
+        setBgimg(5);
+      }else {
+        setBgimg(1);
+      }
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   useEffect(() => {

@@ -9,7 +9,7 @@ const Myff = () => {
                 <h2>위치기반 먹거리 SNS</h2>
                 <h3>2022.10.15 ~ 2022.12.02</h3>
                 <h3>개발인원 : 4명</h3>
-                <h2><a className={styles.codeview} href='https://github.com/wonjun12/MyFF-Project'><span>▶</span>GitHub</a></h2>
+                <h2><a className={styles.codeview} href='https://github.com/ksojin1/MyFF'><span>▶</span>GitHub</a></h2>
                 <p>맛집의 위치를 지도에 표시해 나만의 맛집 스토리를 기록할 수 있고 실시간으로 팔로워와 소통할 수 있는 SNS입니다.<br/>
                 제가 맡은 역할은 메인페이지, 게시물 상세보기, 댓글 CRUD 입니다.</p>
                 <p>학원에서 만난 팀원들과 함께 독학으로 React와 Node를 공부해 완성한 프로젝트입니다.<br/>

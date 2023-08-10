@@ -9,7 +9,7 @@ const Plan = () => {
                 <h2>여행 계획표 만들기 프로그램</h2>
                 <h3>2022.11.01 ~ 2022.12.12</h3>
                 <h3>개발인원 : 2명</h3>
-                <h2><a className={styles.codeview} href='https://github.com/wonjun12/Team-PlanProject'><span>▶</span>GitHub</a></h2>
+                <h2><a className={styles.codeview} href='https://github.com/ksojin1/Plan-project'><span>▶</span>GitHub</a></h2>
                 <p>위치기반으로 여행계획을 직관적으로 볼 수 있고 작성한 계획표를 PDF로 출력해 공유할 수 있는 프로그램입니다.<br/>
                 제가 구현한 기능은 계획서 작성 및 View 입니다.</p>
                 <p>프로그램을 개발하면서 JSX로 Object타입을 활용하는 다양한 방법을 익힐 수 있었습니다.</p>
